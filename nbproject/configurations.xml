@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>constant_marshaller.h</itemPath>
+      <itemPath>driver.h</itemPath>
+      <itemPath>ei_functions.h</itemPath>
+      <itemPath>generic_erlang_driver.h</itemPath>
+      <itemPath>invoker.h</itemPath>
+      <itemPath>marshaller.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>driver.cpp</itemPath>
+      <itemPath>ei_functions.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="Generic Erlang Driver CppUnit Test"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/DriverTest.cpp</itemPath>
+        <itemPath>tests/DriverTest.h</itemPath>
+        <itemPath>tests/GenErlDrvTestRunner.cpp</itemPath>
+        <itemPath>tests/InvokerTest.cpp</itemPath>
+        <itemPath>tests/InvokerTest.h</itemPath>
+        <itemPath>tests/MarshallerTest.cpp</itemPath>
+        <itemPath>tests/MarshallerTest.h</itemPath>
+        <itemPath>tests/NetbeansBriefTestProgressListener.h</itemPath>
+        <itemPath>tests/NetbeansTestProgressListener.cpp</itemPath>
+        <itemPath>tests/TestFunctionsAndDriver.cpp</itemPath>
+        <itemPath>tests/TestFunctionsAndDriver.h</itemPath>
+        <itemPath>tests/helpers.cpp</itemPath>
+        <itemPath>tests/helpers.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../erl/include</pElem>
+          </incDir>
+          <commandLine>-std=c++14</commandLine>
+        </ccTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="constant_marshaller.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="driver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="driver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ei_functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ei_functions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles">
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../erl/src/ei"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../erl/src/ei"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libei.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="generic_erlang_driver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="invoker.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marshaller.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/DriverTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/DriverTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/GenErlDrvTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/InvokerTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/InvokerTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/MarshallerTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/MarshallerTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/NetbeansBriefTestProgressListener.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="tests/NetbeansTestProgressListener.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="tests/TestFunctionsAndDriver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/TestFunctionsAndDriver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/helpers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/helpers.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="constant_marshaller.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="driver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="driver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ei_functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ei_functions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="generic_erlang_driver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="invoker.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="marshaller.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/DriverTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/DriverTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/GenErlDrvTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/InvokerTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/InvokerTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/MarshallerTest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/MarshallerTest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/NetbeansBriefTestProgressListener.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="tests/NetbeansTestProgressListener.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="tests/TestFunctionsAndDriver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/TestFunctionsAndDriver.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/helpers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/helpers.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
